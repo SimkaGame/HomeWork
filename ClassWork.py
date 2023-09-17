@@ -1,18 +1,21 @@
-# import math
-# weight_moon = 7.347 * math.pow(10,22)
-# g = 6.6743 * math.pow(10,-11)
-# weight_second = float(input("adaad"))*math.pow(int(input("dsdafa")),int(input("adad")))
-# distance = int(input("Введите расстояние желаемой планеты до Луны в метрах"))
-# f = (g * weight_moon * weight_second) / (math.pow(distance, 2))
-# print(f)
+import random
+import time
 
-import math
-weight_moon = 7.347 * math.pow(10,22)
-g = 6.6743 * math.pow(10,-11)
-weight_second = input("Введите массу второй планеты")
-weight_second1 = list(weight_second.split("*"))
-weight_second1.remove(min(weight_second1))
-weight_second3 = float(weight_second1[0])*int(weight_second1[1])**int(weight_second1[2])
-distance = int(input("Введите расстояние желаемой планеты до Луны в метрах"))
-f = (g * weight_moon * weight_second3) / (math.pow(distance, 2))
-print(f)
+a = []
+b = []
+c = []
+d = []
+for g in range(0,99999):
+    a.append(random.randint(0,100))
+N = len(a)
+
+def bubble(x):
+    for i in range(0, N-1):
+        for j in range(0, N-1-i):
+            if x[j] > x[j+1]:
+                x[j], x[j+1] =  x[j+1], x[j]
+    return x
+start = time.time()
+print(bubble(a))
+end - time.time()
+print(end)
