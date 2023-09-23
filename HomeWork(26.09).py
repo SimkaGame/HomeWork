@@ -45,7 +45,7 @@ start_bubble = time.time()
 print("пузырек", bubble(bubble_a))
 end_bubble = time.time() - start_bubble
 print(end_bubble)
-print("----", quick_a)
+
 start_quick = time.time()
 print("быстрая", quick(quick_a))
 end_quick = time.time() - start_quick
